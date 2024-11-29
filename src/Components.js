@@ -11,7 +11,7 @@ import { VIcon, VDialog, VOverlay } from 'vuetify/components'
 export const Wrapper = styled.div`
   font-family: Raleway, Helvetica, Arial, 微軟正黑體, Microsoft JhengHei,
     sans-serif;
-  background-image: url(../images/key_vision.jpg);
+  background-image: url(/personal-page/images/key_vision.jpg);
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -232,7 +232,7 @@ export const IntroWrapper = styled.div`
   }
 
   @media (max-width: 576px) {
-    background-image: url(../images/key_vision.jpg);
+    background-image: url(/personal-page/images/key_vision.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -273,12 +273,12 @@ export const IntroWrapper = styled.div`
 
 export const Section = styled.div`
   &::before {
-    content: url(../images/icon/decoration.svg);
+    content: url(/personal-page/images/icon/decoration.svg);
     display: block;
     margin: -111px auto 40px;
     text-align: center;
     @media (max-width: 768px) {
-      content: url(../images/icon/decoration_small.svg);
+      content: url(/personal-page/images/icon/decoration_small.svg);
       display: block;
       margin: -91px auto 20px;
       text-align: center;
@@ -319,7 +319,7 @@ export const Panel = styled('div', { background: String, position: String, size:
   border-radius: 12px;
   overflow: hidden;
   background-color: #c1a6b4;
-  background-image: ${(props) => `url(${props.background})`};
+  background-image: ${(props) => `url(/personal-page${props.background})`};
   background-position: ${(props) =>
     props.position ? props.position : 'center'};
   background-size: ${(props) => (props.position ? props.size : 'cover')};

@@ -215,7 +215,7 @@
         <h4>Front-End Web Developer</h4>
         <img
           class="arrow-down"
-          src="../public/images/icon/arrow_down.svg"
+          src="/images/icon/arrow_down.svg"
           @click="onScrollDownClick"
         />
       </div>
@@ -229,7 +229,7 @@
         <div class="col-about-me-photo">
           <img
             class="my-photo"
-            src="../public/images/DSC_0778.jpg"
+            src="/images/DSC_0778.jpg"
             alt="Chia-He Chiu"
           />
         </div>
@@ -242,10 +242,10 @@
           </p>
           <br />
           <a href="https://github.com/didibear5" target="_blank" rel="noopener noreferrer">
-            <img class="icon" src="../public/images/icon/GitHub.svg" alt="github">
+            <img class="icon" src="/images/icon/GitHub.svg" alt="github">
           </a>
           <a href="https://www.linkedin.com/in/chia-he-chiu-92676816a" target="_blank" rel="noopener noreferrer">
-            <img class="icon" src="../public/images/icon/In.svg" alt="linkedin">
+            <img class="icon" src="/images/icon/In.svg" alt="linkedin">
           </a>
           <div class="d-flex align-center mt-2">
             <v-icon
