@@ -364,7 +364,7 @@
         <div class="col-project-photo">
           <img
             class="project-img"
-            src="/images/game-demo.jpg"
+            src="/images/game-demo.png"
             alt="meowmeowchat"
           />
         </div>
