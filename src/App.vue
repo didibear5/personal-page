@@ -114,7 +114,7 @@
       size: '230%',
     },
     {
-      src: '/images/butterfly.png',
+      src: '/images/butterfly.jpg',
     },
     {
       src: '/images/sunshine.jpg',
@@ -128,7 +128,7 @@
       src: '/images/kura-and-tora-square.jpg',
     },
     {
-      src: '/images/didi.png',
+      src: '/images/didi.jpg',
       position: '50% 18%',
       size: '135%'
     },
@@ -317,7 +317,7 @@
         <div class="col-project-photo">
           <img
             class="project-img"
-            src="/images/kids-art-contest.png"
+            src="/images/kids-art-contest.jpg"
             alt="meowmeowchat"
           />
         </div>
@@ -364,7 +364,7 @@
         <div class="col-project-photo">
           <img
             class="project-img"
-            src="/images/game-demo.png"
+            src="/images/game-demo.jpg"
             alt="meowmeowchat"
           />
         </div>
