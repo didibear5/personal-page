@@ -369,6 +369,7 @@ export const WebDialog = styled(VDialog, { })`
     opacity: 0.8;
     &:hover {
       cursor: pointer;
+      opacity: 1;
     }
   }
   .v-overlay__content {
@@ -384,22 +385,27 @@ export const PaintingDialog = styled.div`
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    height: 100px !important;
-    width: 100px !important;
+    height: 100px;
+    width: 100px;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    background: #0000004d;
+    opacity: 0.8;
+    border-radius: 100%;
     display: flex;
     cursor: pointer;
     z-index: 10000;
-    opacity: 0.8;
     &:hover {
       opacity: 1;
     }
   }
 
   .left-btn {
-    left: 12px;
+    left: 0;
   }
   .right-btn {
-    right: 12px;
+    right: 0;
   }
 `;
 
@@ -418,6 +424,7 @@ export const PaintingOverlay = styled(VOverlay, { })`
     opacity: 0.8;
     &:hover {
       cursor: pointer;
+      opacity: 1;
     }
   }
 

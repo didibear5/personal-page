@@ -236,9 +236,9 @@
         <div class="col-about-me-text">
           <h4>Chia-He Chiu / 邱佳禾</h4>
           <p class="align-left">
-            我畢業於台灣大學園藝暨景觀學系，大三時修了網頁設計的課程，開啟了對網頁開發的興趣。
-            <br />
-           
+            我畢業於台灣大學園藝暨景觀學系，大三時修了網頁設計的課程，開啟了對網頁開發的興趣。現在是一個有五年經驗的前端工程師。
+            <br /><br />
+            使用 React、Vue3 開發
           </p>
           <br />
           <a href="https://github.com/didibear5" target="_blank" rel="noopener noreferrer">
@@ -268,9 +268,20 @@
       <div class="row">
         <div class="col-project-text">
           <h4 class="mb-2">GPT 前端介面</h4>
-          <p class="align-left">保有隱私的輕量級聊天室</p>
           <p class="align-left">
-            我主要負責介面設計與前端的部分。系統框架為Django，使用語言主要有JavaScript、jQuery、Python。
+            內部使用的 GPT 系統，提供同仁有效率的了解公司規章、教育訓練。
+          </p>
+          <ul class="ml-5 mt-2">
+            <li>
+              使用 websocket 實作資料傳輸功能。
+            </li>
+            <li>
+              應用 design token 概念，提升設計與開發的一致性與效率。
+            </li>
+          </ul>
+          <br />
+          <p class="align-left">
+            使用技術：React、Next、websocket
           </p>
         </div>
         <div class="col-project-photo">
@@ -284,9 +295,14 @@
       <div class="row py-12" style="background: #ffffff;">
         <div class="col-project-text">
           <h4 class="mb-2">繪圖比賽活動頁面</h4>
-          <p class="align-left">保有隱私的輕量級聊天室</p>
+          <ul class="ml-5 mt-2">
+            <li>
+              使用 Firebase 追蹤用戶使用行為
+            </li>
+          </ul>
+          <br />
           <p class="align-left">
-            我主要負責介面設計與前端的部分。系統框架為Django，使用語言主要有JavaScript、jQuery、Python。
+            使用技術：React、Next、Material-UI、Firebase
           </p>
           <v-btn
             class="btn"
@@ -310,9 +326,17 @@
       <div class="row py-12">
         <div class="col-project-text">
           <h4 class="mb-2">小遊戲</h4>
-          <p class="align-left">保有隱私的輕量級聊天室</p>
+          <ul class="ml-5 mt-2">
+            <li>
+              使用 css animation 和 lottie 製作互動遊戲效果
+            </li>
+            <li>
+              構建可與 App 整合的 webview，提供一致且流暢的跨平台使用體驗
+            </li>
+          </ul>
+          <br />
           <p class="align-left">
-            我主要負責介面設計與前端的部分。系統框架為Django，使用語言主要有JavaScript、jQuery、Python。
+            使用技術：React、Next、lottie
           </p>
           <v-btn
             class="btn"
@@ -368,26 +392,24 @@
             </div>
             <img 
               v-if="selectedPainting"
-              :src="selectedPainting.src"
+              :src="`/personal-page${selectedPainting.src}`"
               class="dialog-image"
             />
           </div>
         </PaintingOverlay>
         <v-icon
-          v-if="showPaintingDialog"
+          v-if="showPaintingDialog && currentPaintingIndex !== 0"
           icon="fas fa-angle-left"
           class="navigation-btn left-btn"
-          :disabled="currentPaintingIndex === 0"
           @click="showPreviousPainting"
-          size="50px"
+          color="white"
         ></v-icon>
         <v-icon
-          v-if="showPaintingDialog"
+          v-if="showPaintingDialog && currentPaintingIndex !== paintings.length - 1"
           icon="fas fa-angle-right"
           class="navigation-btn right-btn"
-          :disabled="currentPaintingIndex === paintings.length - 1"
           @click="showNextPainting"
-          size="50px"
+          color="white"
         ></v-icon>
 
       </PaintingDialog>
