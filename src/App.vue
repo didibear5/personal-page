@@ -265,7 +265,7 @@
 
     <Section id="project">
       <h2>Project</h2>
-      <div class="row">
+      <div class="row" style="background: #ebebeb;">
         <div class="col-project-text">
           <h4 class="mb-2">GPT 前端介面</h4>
           <p class="align-left">
@@ -287,8 +287,8 @@
         <div class="col-project-photo">
           <img
             class="project-img"
-            src="/images/test.gif"
-            alt="meowmeowchat"
+            src="/images/chat.gif"
+            alt="chat"
           />
         </div>
       </div>
@@ -318,12 +318,13 @@
           <img
             class="project-img"
             src="/images/kids-art-contest.jpg"
-            alt="meowmeowchat"
+            alt="kids-art-contest"
+            loading="lazy"
           />
         </div>
 
       </div>
-      <div class="row py-12">
+      <div class="row py-12" style="background: #ebebeb;">
         <div class="col-project-text">
           <h4 class="mb-2">小遊戲</h4>
           <ul class="ml-5 mt-2">
@@ -365,7 +366,57 @@
           <img
             class="project-img"
             src="/images/game-demo.png"
-            alt="meowmeowchat"
+            alt="game-demo"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div class="row py-12" style="background: #ffffff;">
+        <div class="col-project-text">
+          <h4 class="mb-2">kindle 價格追蹤小站</h4>
+          <p class="align-left">
+            追蹤電子書價格，在歷史低價的時候發送通知
+          </p>
+          <ul class="ml-5 mt-2">
+            <li>
+              利用 puppeteer 抓取電商網站資訊
+            </li>
+            <li>
+              使用 mongoDB 存取資料
+            </li>
+            <li>
+              使用 Next api 做資料串接
+            </li>
+          </ul>
+          <br />
+          <p class="align-left">
+            使用技術：React、Next、puppeteer、mongodb
+          </p>
+          <v-btn
+            class="btn"
+            href="https://kindle-list.vercel.app/"
+            target="_blank"
+            variant="outlined"
+            :ripple="false"
+          >
+            Demo
+          </v-btn>
+          <v-btn
+            class="btn ml-2"
+            href="https://github.com/didibear5/kindle_list"
+            target="_blank"
+            variant="outlined"
+            :ripple="false"
+          >
+            Github
+          </v-btn>
+        </div>
+        <div class="col-project-photo">
+          <img
+            class="project-img"
+            src="/images/kindle-list.jpg"
+            alt="kindle-list"
+            loading="lazy"
           />
         </div>
       </div>

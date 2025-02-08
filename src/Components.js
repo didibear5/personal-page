@@ -289,7 +289,8 @@ export const Section = styled.div`
     padding: 70px 0;
   }
   &#project {
-    background-color: #ebebeb;
+  background: linear-gradient(to bottom,  #ebebeb 1%,#ebebeb 53%,#ebebeb 53%,#ffffff 55%,#ffffff 100%);
+
     padding: 70px 0;
   }
   .project-img {
@@ -300,7 +301,7 @@ export const Section = styled.div`
     // }
   }
   &#gallery {
-    background-color: white;
+    background-color: #ebebeb;
     padding: 70px 0;
   }
 `;
